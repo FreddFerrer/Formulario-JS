@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!--Grupo usuario-->
+            <article class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Usuario</label>
+                <article class="formulario__grupo-input">
+                    <input type="text" name="usuario" id="usuario" class="formulario__input" placeholder="ColitoPeludo">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </article>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 20 digitos y no tiene que contener signos</p>
+            </article>
+
+            <!--Grupo nombre-->
+            <article class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <article class="formulario__grupo-input">
+                    <input type="text" name="nombre" id="nombre" class="formulario__input" placeholder="Jonh Doe">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </article>
+                <p class="formulario__input-error">El nombre no tiene que tener numeros</p>
+            </article>
+
+            <!--Grupo contraseña-->
+            <article class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <article class="formulario__grupo-input">
+                    <input type="password" name="password" id="password" class="formulario__input">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </article>
+                <p class="formulario__input-error">La contraseña tiene que tener entre 8 y 16 digitos</p>
+            </article>
+
+            <!--Grupo contraseña 2-->
+            <article class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label">Repetir contraseña</label>
+                <article class="formulario__grupo-input">
+                    <input type="password" name="password2" id="password2" class="formulario__input">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </article>
+                <p class="formulario__input-error">Las contraseñas deben ser iguales</p>
+            </article>
+
+            <!--Grupo correo electronico-->
+            <article class="formulario__grupo" id="grupo__email">
+                <label for="email" class="formulario__label">Correo electronico</label>
+                <article class="formulario__grupo-input">
+                    <input type="email" name="email" id="email" class="formulario__input" placeholder="corre@correo.com">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </article>
+                <p class="formulario__input-error">El correo solo puede contener letras, puntos, numeros, guiones y guiones bajos</p>
+            </article>
+
+            <!--Grupo telefono-->
+            <article class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Telefono</label>
+                <article class="formulario__grupo-input">
+                    <input type="tel" name="telefono" id="telefono" class="formulario__input" >
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </article>
+                <p class="formulario__input-error">El numero de telefono debe contener de 6 a 12 digitos</p>
+            </article>
+
+            <!--Grupo terminos y condiciones-->
+            <article class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input type="checkbox" class="formulario__checkbox" name="terminos" id="terminos">
+                    Acepto los terminos y condiciones
+                </label>
+            </article>
+
+            <article class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i>  <b>Error:</b> Por favor rellene el formulario.  </p>
+            </article>
+
+            <article class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+            </article>
+
+        </form>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/b79ed5faa6.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
